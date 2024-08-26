@@ -1,0 +1,93 @@
+Different sections in Robot Framework:
+--------------------------------------------
+-> Settings: all the libraries are declared here
+-> variables: all the variables are declared here.
+-> Test Cases: Used for writing test cases
+-> Keywords: Custom keywords are declared inside here
+
+
+Verify the Title of the page:
+---------------------------------------
+-> "Title should be" keyword is used to verify if the title of the page is correct.
+
+Working with Web Elements:
+--------------------------------------------------------
+1. Input Box:
+--------------------
+We can check the below things for an input box:
+    -> Visibility status
+    -> Enabled status
+    -> Value of the input box
+    -> Clearing the input box
+
+2. Radio Buttons and Check Boxes:
+---------------------------------
+-> Selecting the radio buttons using the radio button group name and value
+-> Selecting and unselecting checkboxes using their value
+
+3. Dropdowns:
+-------------
+-> Select From List By Value
+-> Select From List By Label
+-> Select From List By Index
+
+4. Wait and Timeout:
+---------------------
+-> Set Selenium Implicit Wait
+-> Get Selenium Implicit Wait
+-> Set Selenium Timeout
+-> Get Selenium Timeout
+
+5. Closing single and multiple browsers:
+-----------------------------------------
+-> Close Browser
+-> Close All Browsers
+
+6. Handling Alerts:
+--------------------
+-> Handle Alert accept/leave/dismiss
+-> Input Text Into Alert
+-> Alert should be present
+
+7. Handling Iframes:
+---------------------
+-> Select Frame
+-> Unselect Frame
+
+8. Handling Multiple Tabs:
+---------------------------------
+-> We can use the title of the page or window id to switch the tabs.
+
+-> Select Window    title=TitleOfThePage
+-> Select Window    ${handles}[0]     # '0' represents the first opened tab
+
+9. Navigational Keywords:
+---------------------------
+
+-> Go To -        To go to a particular URL
+-> Go Back -      To get back to the previous opened page
+-> Get Location - To get the current URL of the page
+
+10. Capturing the Screenshot:
+------------------------------
+
+-> Capture Element Screenshot   locator    locationWithFileName
+-> Capture Page Screenshot    locationWithFileName
+
+Note:
+-----
+The default location for the screenshot is the current working directory.
+
+
+MOUSE OPERATIONS:
+--------------------------------------------------------------------------------------
+-> Right Click
+-> Double Click
+-> Drag and Drop
+
+
+USER-DEFINED KEYWORDS:
+---------------------------------------------------------------------------------------
+-> User-defined keywords with no arguments
+-> User-defined keywords with arguments
+-> User-defined keywords with arguments and return value

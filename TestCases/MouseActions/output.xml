@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-08-09T02:58:45.654899" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Drag And Drop" source="D:\Robot  Framework\TestCases\MouseActions\test_drag_and_drop.robot">
+<test id="s1-t1" name="Drag and Drop Testing" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-09T02:58:46.159701" level="INFO">Opening browser 'edge' to base url 'http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html'.</msg>
+<arg>http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-09T02:58:46.159701" elapsed="4.689973"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-09T02:58:50.849674" elapsed="0.069555"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:box1</arg>
+<arg>id:box101</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2024-08-09T02:58:50.919229" elapsed="0.628642"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:box2</arg>
+<arg>id:box102</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2024-08-09T02:58:51.547871" elapsed="1.665815"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:box3</arg>
+<arg>id:box103</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2024-08-09T02:58:53.213686" elapsed="0.629678"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:box4</arg>
+<arg>id:box104</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2024-08-09T02:58:53.843364" elapsed="0.618094"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:box5</arg>
+<arg>id:box105</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2024-08-09T02:58:54.461458" elapsed="0.604006"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:box6</arg>
+<arg>id:box106</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2024-08-09T02:58:55.067044" elapsed="0.596017"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:box7</arg>
+<arg>id:box107</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2024-08-09T02:58:55.663061" elapsed="0.604085"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-09T02:59:00.267544" level="INFO">Slept 4 seconds.</msg>
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-09T02:58:56.267146" elapsed="4.000398"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-08-09T02:59:00.267544" elapsed="6.326150"/>
+</kw>
+<status status="PASS" start="2024-08-09T02:58:46.144083" elapsed="20.451277"/>
+</test>
+<status status="PASS" start="2024-08-09T02:58:45.670739" elapsed="20.924621"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test Drag And Drop">Test Drag And Drop</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.0.1 (Python 3.12.4 on win32)" generated="2024-08-19T19:39:42.261981" rpa="false" schemaversion="5">
+<suite id="s1" name="MouseActions" source="D:\Robot  Framework\TestCases\MouseActions">
+<suite id="s1-s1" name="Test Double Click" source="D:\Robot  Framework\TestCases\MouseActions\test_double_click.robot">
+<test id="s1-s1-t1" name="Double Click Action" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:39:23.315766" level="INFO">Opening browser 'edge' to base url 'https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_ev_ondblclick3'.</msg>
+<arg>https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_ev_ondblclick3</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-19T19:39:23.315766" elapsed="7.619759"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-19T19:39:30.936537" elapsed="0.124690"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:39:31.062627" level="INFO">Selecting frame 'xpath://iframe[@id='iframeResult']'.</msg>
+<arg>xpath://iframe[@id='iframeResult']</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-08-19T19:39:31.061227" elapsed="0.107721"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:39:31.170501" level="INFO">Double clicking element 'xpath://button[normalize-space()='Copy Text']'.</msg>
+<arg>xpath://button[normalize-space()='Copy Text']</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T19:39:31.168948" elapsed="0.486565"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-19T19:39:33.656302" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-19T19:39:31.656030" elapsed="2.000272"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-08-19T19:39:33.656302" elapsed="6.267227"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:39:23.314773" elapsed="16.609833"/>
+</test>
+<status status="PASS" start="2024-08-19T19:39:22.864000" elapsed="17.061173"/>
+</suite>
+<suite id="s1-s2" name="Test Drag And Drop" source="D:\Robot  Framework\TestCases\MouseActions\test_drag_and_drop.robot">
+<test id="s1-s2-t1" name="Drag and Drop Testing" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:39:23.329157" level="INFO">Opening browser 'edge' to base url 'http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html'.</msg>
+<arg>http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-19T19:39:23.329157" elapsed="5.195901"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-19T19:39:28.525058" elapsed="0.151440"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:box1</arg>
+<arg>id:box101</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2024-08-19T19:39:28.676498" elapsed="0.743917"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:box2</arg>
+<arg>id:box102</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2024-08-19T19:39:29.420415" elapsed="0.592707"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:box3</arg>
+<arg>id:box103</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2024-08-19T19:39:30.013122" elapsed="0.925407"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:box4</arg>
+<arg>id:box104</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2024-08-19T19:39:30.938529" elapsed="0.628641"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:box5</arg>
+<arg>id:box105</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2024-08-19T19:39:31.567170" elapsed="0.619162"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:box6</arg>
+<arg>id:box106</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2024-08-19T19:39:32.187366" elapsed="0.592351"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:box7</arg>
+<arg>id:box107</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2024-08-19T19:39:32.779717" elapsed="0.584581"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-19T19:39:35.365434" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-19T19:39:33.365328" elapsed="2.000106"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-08-19T19:39:35.365984" elapsed="6.461189"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:39:23.327082" elapsed="18.500091"/>
+</test>
+<status status="PASS" start="2024-08-19T19:39:22.886778" elapsed="18.941427"/>
+</suite>
+<suite id="s1-s3" name="Test Right Click" source="D:\Robot  Framework\TestCases\MouseActions\test_right_click.robot">
+<test id="s1-s3-t1" name="Mouse Actions" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:39:23.317768" level="INFO">Opening browser 'edge' to base url 'https://swisnl.github.io/jQuery-contextMenu/demo.html'.</msg>
+<arg>https://swisnl.github.io/jQuery-contextMenu/demo.html</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-19T19:39:23.316769" elapsed="5.303979"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-19T19:39:28.622139" elapsed="0.158856"/>
+</kw>
+<kw name="Open Context Menu" owner="SeleniumLibrary">
+<arg>//span[@class='context-menu-one btn btn-neutral']</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T19:39:28.781996" elapsed="0.388337"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-19T19:39:31.170501" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-19T19:39:29.170333" elapsed="2.000168"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:39:31.171531" level="INFO">Clicking element 'xpath://li[@class='context-menu-item context-menu-icon context-menu-icon-edit']'.</msg>
+<arg>xpath://li[@class='context-menu-item context-menu-icon context-menu-icon-edit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T19:39:31.170501" elapsed="0.130841"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-19T19:39:33.303437" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-19T19:39:31.302355" elapsed="2.001082"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:39:33.304479" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2024-08-19T19:39:33.303437" elapsed="0.012050"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-19T19:39:35.316758" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-19T19:39:33.316506" elapsed="2.000252"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-08-19T19:39:35.316758" elapsed="6.431645"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:39:23.315766" elapsed="18.433857"/>
+</test>
+<status status="PASS" start="2024-08-19T19:39:22.865272" elapsed="18.885057"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 3 executions.</doc>
+<status status="PASS" start="2024-08-19T19:39:22.832000" elapsed="17.096548"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="MouseActions">MouseActions</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test Double Click">MouseActions.Test Double Click</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Test Drag And Drop">MouseActions.Test Drag And Drop</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="Test Right Click">MouseActions.Test Right Click</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

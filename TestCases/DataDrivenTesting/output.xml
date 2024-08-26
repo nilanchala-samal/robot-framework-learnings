@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-08-13T19:36:48.633322" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Ddt2 Excel" source="D:\Robot  Framework\TestCases\DataDrivenTesting\test_ddt2_excel.robot">
+<kw name="Launch The Browser" owner="login_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-13T19:36:49.128307" level="INFO">Opening browser 'edge' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<arg>${Login_URL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-13T19:36:49.128307" elapsed="7.885419"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-13T19:36:57.013726" elapsed="0.076992"/>
+</kw>
+<status status="PASS" start="2024-08-13T19:36:49.128307" elapsed="7.962411"/>
+</kw>
+<test id="s1-t1" name="Login Test With Excel Using" line="11">
+<kw name="Invalid Login">
+<kw name="Input Username" owner="login_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-13T19:36:57.098740" level="INFO">Typing text 'username' into text field 'xpath://input[@id='username']'.</msg>
+<arg>xpath://input[@id='username']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-13T19:36:57.090718" elapsed="0.285254"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2024-08-13T19:36:57.090718" elapsed="0.287424"/>
+</kw>
+<kw name="Input Password" owner="login_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-13T19:36:57.378142" level="INFO">Typing text 'password' into text field 'xpath://input[@id='password']'.</msg>
+<arg>xpath://input[@id='password']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-13T19:36:57.378142" elapsed="0.223615"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2024-08-13T19:36:57.378142" elapsed="0.223615"/>
+</kw>
+<kw name="Click Login Button" owner="login_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-13T19:36:57.605801" level="INFO">Clicking element '//button[@id='submit']'.</msg>
+<arg>//button[@id='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-13T19:36:57.605801" elapsed="0.106275"/>
+</kw>
+<status status="PASS" start="2024-08-13T19:36:57.601757" elapsed="0.110319"/>
+</kw>
+<kw name="Error Message Should be Visible" owner="login_resources">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-08-13T19:36:57.755428" level="INFO">Current page contains text 'Your password is invalid!'.</msg>
+<arg>Your password is invalid!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-08-13T19:36:57.716989" elapsed="0.038439"/>
+</kw>
+<status status="PASS" start="2024-08-13T19:36:57.712076" elapsed="0.043352"/>
+</kw>
+<arg>username</arg>
+<arg>password</arg>
+<status status="PASS" start="2024-08-13T19:36:57.090718" elapsed="0.664710"/>
+</kw>
+<status status="PASS" start="2024-08-13T19:36:57.090718" elapsed="0.664710"/>
+</test>
+<kw name="Exit Browser" owner="login_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-08-13T19:36:57.761696" elapsed="6.294065"/>
+</kw>
+<status status="PASS" start="2024-08-13T19:36:57.755428" elapsed="6.300333"/>
+</kw>
+<status status="PASS" start="2024-08-13T19:36:48.635013" elapsed="15.420748"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test Ddt2 Excel">Test Ddt2 Excel</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-08-13T19:36:49.126846" level="ERROR">Error in file 'D:\Robot  Framework\TestCases\DataDrivenTesting\test_ddt2_excel.robot' on line 4: Importing library 'DataDriver' failed: ModuleNotFoundError: No module named 'DataDriver'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\users\asus\appdata\roaming\python\python312\Scripts\robot.exe
+  C:\Program Files\Python\python312.zip
+  C:\Program Files\Python\DLLs
+  C:\Program Files\Python\Lib
+  C:\Program Files\Python
+  C:\Users\ASUS\AppData\Roaming\Python\Python312\site-packages
+  C:\Program Files\Python\Lib\site-packages</msg>
+</errors>
+</robot>

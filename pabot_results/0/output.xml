@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-08-19T14:10:44.291310" rpa="false" schemaversion="5">
+<suite id="s1" name="Practice" source="D:\Robot  Framework\Practice">
+<suite id="s1-s1" name="Test Demoqa" source="D:\Robot  Framework\Practice\test_demoqa.robot">
+<test id="s1-s1-t1" name="Automating Site" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:44.817804" level="INFO">Opening browser 'edge' to base url 'https://demoqa.com/'.</msg>
+<arg>https://demoqa.com/</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-19T14:10:44.817804" elapsed="6.843258"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-19T14:10:51.661062" elapsed="0.170858"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:51.832939" level="INFO">Executing JavaScript:
+window.scrollTo(0, 500)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, 500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-08-19T14:10:51.832939" elapsed="0.050262"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:51.885538" level="INFO">Clicking element 'xpath://div/h5[normalize-space()='Elements']'.</msg>
+<arg>${elements_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:51.884382" elapsed="1.479451"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:53.391188" level="INFO">${total_elements} = 9</msg>
+<var>${total_elements}</var>
+<arg>xpath://div[@class='element-list collapse show']//li</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.363833" elapsed="0.027355"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>The total number of elements are: ${total_elements}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.391188" elapsed="0.001003"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:53.458821" level="INFO">${element} = Text Box</msg>
+<var>${element}</var>
+<arg>xpath:(//div[@class='element-list collapse show']//li)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.394558" elapsed="0.064263"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.458821" elapsed="0.004021"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2024-08-19T14:10:53.393541" elapsed="0.069301"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:53.508687" level="INFO">${element} = Check Box</msg>
+<var>${element}</var>
+<arg>xpath:(//div[@class='element-list collapse show']//li)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.462842" elapsed="0.045845"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.508687" elapsed="0.005436"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2024-08-19T14:10:53.462842" elapsed="0.051368"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:53.557657" level="INFO">${element} = Radio Button</msg>
+<var>${element}</var>
+<arg>xpath:(//div[@class='element-list collapse show']//li)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.514210" elapsed="0.043447"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.557657" elapsed="0.000000"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2024-08-19T14:10:53.514210" elapsed="0.043447"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:53.595636" level="INFO">${element} = Web Tables</msg>
+<var>${element}</var>
+<arg>xpath:(//div[@class='element-list collapse show']//li)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.564676" elapsed="0.030960"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.595636" elapsed="0.000000"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2024-08-19T14:10:53.557657" elapsed="0.037979"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:53.644770" level="INFO">${element} = Buttons</msg>
+<var>${element}</var>
+<arg>xpath:(//div[@class='element-list collapse show']//li)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.595636" elapsed="0.049134"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.644770" elapsed="0.000000"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2024-08-19T14:10:53.595636" elapsed="0.051589"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:53.689823" level="INFO">${element} = Links</msg>
+<var>${element}</var>
+<arg>xpath:(//div[@class='element-list collapse show']//li)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.648055" elapsed="0.041768"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.690472" elapsed="0.000000"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2024-08-19T14:10:53.647501" elapsed="0.042971"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:53.761778" level="INFO">${element} = Broken Links - Images</msg>
+<var>${element}</var>
+<arg>xpath:(//div[@class='element-list collapse show']//li)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.690472" elapsed="0.071306"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.761778" elapsed="0.000000"/>
+</kw>
+<var name="${i}">7</var>
+<status status="PASS" start="2024-08-19T14:10:53.690472" elapsed="0.071306"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:53.814725" level="INFO">${element} = Upload and Download</msg>
+<var>${element}</var>
+<arg>xpath:(//div[@class='element-list collapse show']//li)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.761778" elapsed="0.052947"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.814725" elapsed="0.000000"/>
+</kw>
+<var name="${i}">8</var>
+<status status="PASS" start="2024-08-19T14:10:53.761778" elapsed="0.052947"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:53.975850" level="INFO">${element} = Dynamic Properties</msg>
+<var>${element}</var>
+<arg>xpath:(//div[@class='element-list collapse show']//li)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.814725" elapsed="0.161125"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.975850" elapsed="0.002645"/>
+</kw>
+<var name="${i}">9</var>
+<status status="PASS" start="2024-08-19T14:10:53.814725" elapsed="0.163770"/>
+</iter>
+<var>${i}</var>
+<value>1</value>
+<value>${total_elements}+1</value>
+<status status="PASS" start="2024-08-19T14:10:53.392191" elapsed="0.586304"/>
+</for>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:53.978495" level="INFO">Clicking element 'xpath://span[normalize-space()='Text Box']'.</msg>
+<arg>xpath://span[normalize-space()='Text Box']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:53.978495" elapsed="0.602924"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:54.581419" level="INFO">Typing text 'Nilanchala Samal' into text field 'xpath://input[@id='userName']'.</msg>
+<arg>${name}</arg>
+<arg>Nilanchala Samal</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:54.581419" elapsed="0.553567"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:55.134986" level="INFO">Typing text 'nilanchal960@gmail.com' into text field 'xpath://input[@id='userEmail']'.</msg>
+<arg>${email}</arg>
+<arg>nilanchal960@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:55.134986" elapsed="0.327437"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:55.462423" level="INFO">Typing text 'Demo Current Address' into text field 'xpath://textarea[@id='currentAddress']'.</msg>
+<arg>${current_address}</arg>
+<arg>Demo Current Address</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:55.462423" elapsed="0.409130"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:55.871553" level="INFO">Typing text 'Demo Permanent Address' into text field 'xpath://textarea[@id='permanentAddress']'.</msg>
+<arg>${permanent_address}</arg>
+<arg>Demo Permanent Address</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:55.871553" elapsed="0.311235"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:56.186374" level="INFO">Clicking button 'xpath://button[@id='submit']'.</msg>
+<arg>xpath://button[@id='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:56.182788" elapsed="0.173884"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:56.402214" level="INFO">${fetched_name} = Name:Nilanchala Samal</msg>
+<var>${fetched_name}</var>
+<arg>xpath://p[@id='name']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:56.356672" elapsed="0.045542"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:56.444477" level="INFO">${fetched_email} = Email:nilanchal960@gmail.com</msg>
+<var>${fetched_email}</var>
+<arg>xpath://p[@id='email']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:56.402214" elapsed="0.042263"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:56.485192" level="INFO">${fetched_cur_address} = Current Address :Demo Current Address</msg>
+<var>${fetched_cur_address}</var>
+<arg>xpath://p[@id='currentAddress']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:56.444477" elapsed="0.040715"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:56.522851" level="INFO">${fetched_per_address} = Permananet Address :Demo Permanent Address</msg>
+<var>${fetched_per_address}</var>
+<arg>xpath://p[@id='permanentAddress']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:56.485192" elapsed="0.037659"/>
+</kw>
+<kw name="Get Value" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:56.565610" level="INFO">${actual_name} = Nilanchala Samal</msg>
+<var>${actual_name}</var>
+<arg>${name}</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:56.522851" elapsed="0.042759"/>
+</kw>
+<kw name="Get Value" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:56.591466" level="INFO">${actual_email} = nilanchal960@gmail.com</msg>
+<var>${actual_email}</var>
+<arg>${email}</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:56.565610" elapsed="0.025856"/>
+</kw>
+<kw name="Get Value" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:56.620968" level="INFO">${actual_current_address} = Demo Current Address</msg>
+<var>${actual_current_address}</var>
+<arg>${current_address}</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:56.591466" elapsed="0.029502"/>
+</kw>
+<kw name="Get Value" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:56.652239" level="INFO">${actual_permanent_address} = Demo Permanent Address</msg>
+<var>${actual_permanent_address}</var>
+<arg>${permanent_address}</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:56.620968" elapsed="0.031271"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${fetched_name} + ${fetched_email} + ${fetched_cur_address} + ${fetched_per_address}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-19T14:10:56.652239" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${actual_name} + ${actual_email} + ${actual_current_address} + ${actual_permanent_address}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-19T14:10:56.652239" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:56.652239" level="INFO">Clicking element 'xpath://div[normalize-space()='Alerts, Frame &amp; Windows']'.</msg>
+<arg>xpath://div[normalize-space()='Alerts, Frame &amp; Windows']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:56.652239" elapsed="0.104385"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${frames}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-19T14:10:56.756624" elapsed="0.279482"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:57.038289" level="INFO">Clicking element 'xpath://span[normalize-space()='Frames']'.</msg>
+<arg>${frames}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:57.037757" elapsed="0.144571"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:57.182328" level="INFO">Selecting frame 'frame1'.</msg>
+<arg>frame1</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-08-19T14:10:57.182328" elapsed="0.136494"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:57.358279" level="INFO">${box1_text} = This is a sample page</msg>
+<var>${box1_text}</var>
+<arg>//h1[@id='sampleHeading']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:57.318822" elapsed="0.039457"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${box1_text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-19T14:10:57.358279" elapsed="0.000000"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2024-08-19T14:10:57.358279" elapsed="0.017834"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:57.376113" level="INFO">Selecting frame 'frame2'.</msg>
+<arg>frame2</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-08-19T14:10:57.376113" elapsed="0.088021"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:57.496455" level="INFO">${box2_text} = This is a sample page</msg>
+<var>${box2_text}</var>
+<arg>//h1[@id='sampleHeading']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:57.464134" elapsed="0.032321"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${box2_text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-19T14:10:57.496455" elapsed="0.000000"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2024-08-19T14:10:57.496455" elapsed="0.008178"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:57.504633" level="INFO">Clicking element 'xpath://span[normalize-space()='Alerts']'.</msg>
+<arg>xpath://span[normalize-space()='Alerts']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:57.504633" elapsed="0.119946"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:57.626682" level="INFO">Clicking button 'xpath://button[@id='alertButton']'.</msg>
+<arg>xpath://button[@id='alertButton']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:57.624579" elapsed="0.142787"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:57.767366" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2024-08-19T14:10:57.767366" elapsed="0.008263"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:57.775629" level="INFO">Executing JavaScript:
+window.scrollTo(0, 500)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, 500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-08-19T14:10:57.775629" elapsed="0.013474"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:57.790820" level="INFO">Clicking button 'xpath://button[@id='confirmButton']'.</msg>
+<arg>xpath://button[@id='confirmButton']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:57.789103" elapsed="0.151439"/>
+</kw>
+<kw name="Alert Should Be Present" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:57.940542" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>Do you confirm action?</arg>
+<arg>leave</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<status status="PASS" start="2024-08-19T14:10:57.940542" elapsed="0.009439"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:57.950514" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2024-08-19T14:10:57.950514" elapsed="0.012885"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:58.027408" level="INFO">${confirm_result} = You selected Ok</msg>
+<var>${confirm_result}</var>
+<arg>xpath://span[@id='confirmResult']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:57.963853" elapsed="0.063555"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${confirm_result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-19T14:10:58.027408" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:58.027408" level="INFO">Clicking button 'xpath://button[@id='promtButton']'.</msg>
+<arg>xpath://button[@id='promtButton']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:58.027408" elapsed="0.140944"/>
+</kw>
+<kw name="Input Text Into Alert" owner="SeleniumLibrary">
+<arg>Nilanchala Samal</arg>
+<arg>leave</arg>
+<doc>Types the given ``text`` into an input field in an alert.</doc>
+<status status="PASS" start="2024-08-19T14:10:58.168352" elapsed="0.015858"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:58.186728" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2024-08-19T14:10:58.184210" elapsed="0.012251"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:58.238113" level="INFO">${prompt_result} = You entered Nilanchala Samal</msg>
+<var>${prompt_result}</var>
+<arg>xpath://span[@id='promptResult']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:58.196461" elapsed="0.041652"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${prompt_result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-19T14:10:58.238113" elapsed="0.001062"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:58.239175" level="INFO">Clicking element 'xpath://span[normalize-space()='Browser Windows']'.</msg>
+<arg>xpath://span[normalize-space()='Browser Windows']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:58.239175" elapsed="0.108553"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:58.350291" level="INFO">Clicking button 'xpath://button[@id='tabButton']'.</msg>
+<arg>xpath://button[@id='tabButton']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:58.350291" elapsed="0.279296"/>
+</kw>
+<kw name="Get Window Handles" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:58.644838" level="INFO">${window_handles} = ['EF6EA7A1ED6809D653F1B9EF71378F46', '66BF4B0CA96D82654E1D114C18E07AF1']</msg>
+<var>${window_handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<status status="PASS" start="2024-08-19T14:10:58.629587" elapsed="0.015251"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${window_handles}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-19T14:10:58.644838" elapsed="0.073456"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>${window_handles}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:58.718294" elapsed="0.146372"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:58.973325" level="INFO">${new_tab_text} = This is a sample page</msg>
+<var>${new_tab_text}</var>
+<arg>xpath://h1[@id='sampleHeading']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:58.867519" elapsed="0.105806"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${new_tab_text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-19T14:10:58.973325" elapsed="0.000000"/>
+</kw>
+<kw name="Close Window" owner="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" start="2024-08-19T14:10:58.973325" elapsed="0.073473"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>${window_handles}[0]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:10:59.046798" elapsed="0.014363"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:10:59.074794" level="INFO">${first_tab_title} = DEMOQA</msg>
+<var>${first_tab_title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-08-19T14:10:59.061161" elapsed="0.013633"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${first_tab_title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-19T14:10:59.074794" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-19T14:11:02.075272" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-19T14:10:59.074794" elapsed="3.000478"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-08-19T14:11:02.075272" elapsed="6.545361"/>
+</kw>
+<status status="PASS" start="2024-08-19T14:10:44.811029" elapsed="23.809604"/>
+</test>
+<status status="PASS" start="2024-08-19T14:10:44.379240" elapsed="24.243563"/>
+</suite>
+<status status="PASS" start="2024-08-19T14:10:44.342189" elapsed="24.280614"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Practice">Practice</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test Demoqa">Practice.Test Demoqa</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

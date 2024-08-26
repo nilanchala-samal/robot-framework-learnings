@@ -1,0 +1,33 @@
+==============================================================================
+Practice                                                                      
+==============================================================================
+Practice.Test Demoqa                                                          
+==============================================================================
+Automating Site                                                       The total number of elements are: 9
+Text Box
+Check Box
+Radio Button
+Web Tables
+Buttons
+Links
+Broken Links - Images
+Upload and Download
+Dynamic Properties
+Name:Nilanchala Samal + Email:nilanchal960@gmail.com + Current Address :Demo Current Address + Permananet Address :Demo Permanent Address
+Nilanchala Samal + nilanchal960@gmail.com + Demo Current Address + Demo Permanent Address
+This is a sample page
+This is a sample page
+You selected Ok
+You entered Nilanchala Samal
+['EF6EA7A1ED6809D653F1B9EF71378F46', '66BF4B0CA96D82654E1D114C18E07AF1']
+This is a sample page
+DEMOQA
+| PASS |
+------------------------------------------------------------------------------
+Practice.Test Demoqa                                                  | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Practice                                                              | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  D:\Robot  Framework\pabot_results\0\output.xml

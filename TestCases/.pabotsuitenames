@@ -1,0 +1,7 @@
+datasources:dc348b7d71a31dca9573a1601d2e27bb01922f4a
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:77eec04913275a5fab491e5f730c17f5b75a6e64
+--suite MouseActions.Test Double Click
+--suite MouseActions.Test Drag And Drop
+--suite MouseActions.Test Right Click
